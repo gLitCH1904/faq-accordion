@@ -23,7 +23,10 @@ for (let i = 0; i < arrow.length; i++) {
         row[e].classList.toggle("active");
       }
     }
-    overlay.classList.toggle("active");
+
+    if (arrow[i].classList.contains("active")) {
+      overlay.classList.add("active");
+    }
   });
 }
 
